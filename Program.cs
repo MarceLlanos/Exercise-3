@@ -8,10 +8,17 @@ namespace Exercise3
 {
     class Program
     {
+        
+        
         static void Main(string[] args)
         {
-            Console.Write(2/2+ "********" + -1/2);
+            Console.Write("Input a text:");
+            string text;
+            text = Console.ReadLine();
+            SplitString splitString = new SplitString();
+            splitString.StringSplit(text);
             Console.ReadKey();
+
         }
     }
 }
