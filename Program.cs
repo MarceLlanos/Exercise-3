@@ -15,8 +15,15 @@ namespace Exercise3
             Console.Write("Input a text:");
             string text;
             text = Console.ReadLine();
-            SplitString splitString = new SplitString();
-            splitString.StringSplit(text);
+            StringSplitter stringSplitter = new StringSplitter();
+            var splitedString = stringSplitter.SplitString(text);
+            Console.Write("[");
+            foreach (var item in splitedString)
+            {
+                Console.Write("\"{0}\" ", item);
+            }
+            Console.Write("]");
+
             Console.ReadKey();
 
         }
